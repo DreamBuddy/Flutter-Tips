@@ -10,4 +10,21 @@
 * 在项目根目录运行 flutter clean  
 *  删除ios/podfile.lock 再运行
 
+### 2.目前这个版本还存在编译问题，flutter官方也在积极解决
+真机运行报错couldn't find "libflutter.so"
 
+暂时的解决方法有：
+
+build.gradle设置
+
+```
+ndk{
+     abiFilters 'armeabi', 'armeabi-v7a'//, 'arm64-v8a'
+}
+```
+
+或者可以增加编译选项：
+
+```
+--target-platform android-arm64 或者 --target-platform android-arm
+```
