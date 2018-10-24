@@ -28,3 +28,15 @@ ndk{
 ```
 --target-platform android-arm64 或者 --target-platform android-arm
 ```
+
+```
+注意~~~~~~~~~~~~~~~~~~~~~~~~~~~了
+app/build.gradle文件
+defaultConfig节点下
+
+打正式包(加入NDK限制)
+        ndk {
+            abiFilters 'armeabi-v7a'//'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+打测试包(注释掉NDK代码)
+```
