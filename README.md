@@ -1,3 +1,6 @@
+# # 学习途径
+   ### 1.Effevtive Dart
+   >http://dart.goodev.org/guides/language/effective-dart/
 # # FLutter-Tips 开发中遇到的点点滴滴记录
 ### 1.iOS 'Flutter/Flutter.h' file not found
     In file included from /Users/mt/.pub-cache/hosted/pub.flutter-io.cn/flutter_webview_plugin-0.2.1+2/ios/Classes/FlutterWebviewPlugin.m:1:
