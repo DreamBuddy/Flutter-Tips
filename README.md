@@ -43,3 +43,5 @@ defaultConfig节点下
 ### 3.'_InternalLinkedHashMap<dynamic, dynamic>' is not a subtype of type 'Map<String, dynamic>' 
 解决办法: ``new Map<String, dynamic>.from(snapshot.value);``
 
+> 引用自:https://github.com/flutter/flutter/issues/16589
+
