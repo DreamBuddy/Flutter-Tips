@@ -40,3 +40,6 @@ defaultConfig节点下
         }
 打测试包(注释掉NDK代码)
 ```
+### 3.'_InternalLinkedHashMap<dynamic, dynamic>' is not a subtype of type 'Map<String, dynamic>' 
+解决办法: ``new Map<String, dynamic>.from(snapshot.value);``
+
