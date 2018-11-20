@@ -48,3 +48,14 @@ defaultConfig节点下
 
 > 引用自:https://github.com/flutter/flutter/issues/16589
 
+### 4.TextField限制字数
+如果需要字数提示框 就用``maxLength:11``
+如果不需要字数提示框就用 
+
+```
+inputFormatters: <TextInputFormatter>[
+    WhitelistingTextInputFormatter.digitsOnly,
+    LengthLimitingTextInputFormatter(11),
+]
+```
+
