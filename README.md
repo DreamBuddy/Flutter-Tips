@@ -54,8 +54,8 @@ defaultConfig节点下
 
 ```
 inputFormatters: <TextInputFormatter>[
-    WhitelistingTextInputFormatter.digitsOnly,
-    LengthLimitingTextInputFormatter(11),
+    WhitelistingTextInputFormatter.digitsOnly, //限制输入格式
+    LengthLimitingTextInputFormatter(11),// 限制字数
 ]
 ```
 
