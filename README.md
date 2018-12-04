@@ -59,3 +59,10 @@ inputFormatters: <TextInputFormatter>[
 ]
 ```
 
+
+
+
+```
+移除__MAXOSX文件夹
+zip -d filename.zip __MACOSX/\*
+```
