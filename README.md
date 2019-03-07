@@ -58,7 +58,8 @@ inputFormatters: <TextInputFormatter>[
     LengthLimitingTextInputFormatter(11),// 限制字数
 ]
 ```
-
+### 5.继承key  :super(key:key)的意义
+widget绑定key时，如果没有继承就会找不到这个widget
 
 
 
