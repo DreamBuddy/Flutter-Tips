@@ -61,7 +61,20 @@ inputFormatters: <TextInputFormatter>[
 ### 5.继承key  :super(key:key)的意义
 widget绑定key时，如果没有继承就会找不到这个widget
 
-
+### 6.页面保持状态
+   继承AutomaticKeepAliveClientMixin，并实现
+   ```
+   @override
+   bool get wantKeepAlive => true;
+   ```
+   重点注意: 使用AutomaticKeepAliveClientMixin还要在build函数里写``super.build()``
+   ```
+   @override
+   Widget build(BuildContext context) {
+      super.build(context);
+      return Container();
+   }
+   ```
 
 ```
 移除__MAXOSX文件夹
