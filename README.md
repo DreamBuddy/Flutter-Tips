@@ -75,6 +75,13 @@ widget绑定key时，如果没有继承就会找不到这个widget
       return Container();
    }
    ```
+### 7.Android WebView无法在https下加载http资源 (表现为某些http视频资源无法播放)
+   在webview加载页面之前，设置加载模式为MIXED_CONTENT_ALWAYS_ALLOW
+   ```
+   if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+      webView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
+   }
+   ```
 
 ```
 移除__MAXOSX文件夹
