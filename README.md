@@ -82,6 +82,10 @@ widget绑定key时，如果没有继承就会找不到这个widget
       webView.getSettings().setMixedContentMode(WebSettings.MIXED_CONTENT_ALWAYS_ALLOW);
    }
    ```
+### 8.Navigator pop to root
+   ```
+   Navigator.popUntil(context, (Route<dynamic> route) => route.isFirst)
+   ```
 
 ```
 移除__MAXOSX文件夹
