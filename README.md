@@ -86,6 +86,12 @@ widget绑定key时，如果没有继承就会找不到这个widget
    ```
    Navigator.popUntil(context, (Route<dynamic> route) => route.isFirst)
    ```
+### 9.ListView foreach如何获取index
+```
+List _sample = ['a','b','c'];
+_sample.asMap().forEach((index, value) => f);
+```
+> 引用自:https://stackoverflow.com/questions/54898767/enumerate-or-map-through-a-list-with-index-and-value-in-dart
 
 ```
 移除__MAXOSX文件夹
